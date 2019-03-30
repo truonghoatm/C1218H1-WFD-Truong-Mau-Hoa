@@ -1,0 +1,15 @@
+<div>
+  <div class="form-group">
+    <label for="name">Name</label>
+    <input [(ngModel)]="book.name" type="text" class="form-control" id="name"  placeholder="Enter name">
+  </div>
+  <div class="form-group">
+    <label for="read">Status</label>
+    <input [(ngModel)]="book.read" type="text" class="form-control" id="read" placeholder="Enter status">
+  </div>
+  <div class="form-group form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+  </div>
+  <button type="submit" class="btn btn-primary" (click)="saveBook()">Submit</button>
+</div>

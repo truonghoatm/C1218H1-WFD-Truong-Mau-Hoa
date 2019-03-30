@@ -1,0 +1,16 @@
+<table class="table">
+  <thead class="thead-light">
+  <tr>
+    <th scope="col">#</th>
+    <th scope="col">Name</th>
+    <th scope="col">Status</th>
+  </tr>
+  </thead>
+  <tbody *ngFor="let books of books; index as i">
+  <tr>
+    <th scope="row">{{books.id}}</th>
+    <td>{{books.name}}</td>
+    <td>{{books.read}}</td>
+  </tr>
+  </tbody>
+</table>
